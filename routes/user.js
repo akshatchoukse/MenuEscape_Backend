@@ -10,7 +10,6 @@ router.post('/user', async(req, res)=>{
 })
 
 router.get('/user', async(req, res)=>{
-    
     let allUsers = await User.find()
     res.send(allUsers)
 })
